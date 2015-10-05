@@ -1,5 +1,435 @@
 
+        
+        .top_bar {
+            background-color: #2c343b;
+            font-family: ProximaNovaRegular;
+            padding: 10px 2px 10px 2px;
+        }
+        .imgSection {
+            display: inline-block;
+            width: 60%;
+            vertical-align: text-bottom;
+            text-align: center;
+        }
+        .logo {
+            width: 45%;
+            margin-left:10%;
+        }
+        .toggle_button{
+            width: 15%;
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 3%;
+            color: #ddd;
+            text-align: center;
+        }
+        .searchSectionIconButton{
+            display: inline-block;
+            vertical-align: top;
+            width: 20%;
+            text-align: right;
+            color: white;
+            padding-top:3%;
+        }
+        .searchSectionToggle{
+            margin: auto;
+            width: 100%;
+            padding-bottom: 25px;
+            margin-top: 4%;
+            text-align: center;
+        }
+        .searchInputToggle{
+            width: 60%;
+            margin: auto;
+            height: 35px;
+            padding-left: 15px;
+            border-radius: 3px;
+            border: 1px solid white;
+        }
+        
+        .searchSection {
+            
+            display: none;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+            
+        }
+        .query {
+            height: 40px;
+            border: 1px solid #ddd;
+            background: #2c343b;
+            border-radius: 6px;
+            font-size: 18px;
+            display: block;
+            padding-left: 10px;
+            width: 93%;
+            margin: auto;
+            margin-top: 10px;
+            color: white;
+        }
+        .location {
+            height: 40px;
+            border-radius: 6px;
+            font-size: 18px;
+            display: block;
+            padding-left: 10px;
+            width: 93%;
+            margin: auto;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            background: #2c343b;
+            color:white;
+            
+        }
+        .authSection {
+            display: none;
+            margin-top:10px;
+            display: none;
+            text-align: center;
+            position: relative;
+            
+        }
+        .login {
+            background-color: #E94643;
+            color: #fff;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-style: solid;
+            border-color: #E94643;
+            font-size: 15px;
+            border-radius: 2px;
+            
+        }
+        .signup {
+            background-color: #E94643;
+            color: #fff;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-style: solid;
+            border-color: #E94643;
+            margin-left: 30px;
+            font-size: 15px;
+            border-radius: 2px;
+            padding-left: 15px;
+            padding-right: 15px
+        }
+        
+        .searchSectionClose{
 
+        }
+        .searchSectionCloseButton{
+            font-size: 30px;
+            color: red;
+            cursor: pointer;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .searchSectionMain{
+            text-align: center;
+            margin:auto;
+            margin-top:20%;
+
+        }
+        
+        .searchSectionLocationInput {
+            margin: auto;
+            width: 70%;
+            height: 40px;
+            padding-left: 10px;
+            border-radius: 5px;
+            border: 1px solid white;
+            margin-bottom: 10px;
+        }
+        .searchSectionSubmit {
+            width: 70%;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid rgb(233,70,67);
+            background: rgb(233,70,67);
+            color: white;
+        }
+        /*Full search div which occupies entire page start*/
+            .fullSearch{
+                position: absolute; 
+                top: 0; 
+                left: 0; 
+                bottom:0;
+                right:0;
+                width:100%;
+                height:100%;
+                background: rgba(44, 52, 90, 0.95) none repeat scroll 0% 0%;
+                display: none;
+                z-index:99999;
+            }
+            .searchSectionClose{
+
+            }
+            .searchSectionCloseButton{
+                font-size: 30px;
+                color: white;
+                font-weight: 100;
+                cursor: pointer;
+                text-align: right;
+                margin-right: 10px;
+            }
+            .searchSectionMain{
+                text-align: center;
+                margin:auto;
+                margin-top:20%;
+
+            }
+            .searchSectionLocationDiv{
+
+            }
+            .searchSectionLocationInput {
+                margin: auto;
+                width: 70%;
+                height: 40px;
+                padding-left: 10px;
+                border-radius: 5px;
+                border: 1px solid white;
+                margin-bottom: 10px;
+            }
+            .searchSectionInputDiv{
+                margin:auto;
+                width:70%;
+                text-align:left;
+            }
+            .searchSectionStoreInputDiv {
+                width: 90%;
+                display: inline-block;
+                height: 40px;
+            }
+            .searchSectionStoreInput{
+                width:100%;
+                height:100%;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border: 1px solid white;
+                padding-left:10px;
+            }
+            .searchSectionSearchButton{
+                display: inline-block;
+                height: 42px;
+                width: 10%;
+                text-align: center;
+                margin-left: -5px;
+                vertical-align: middle;
+                padding-top: 6px;
+                background-color: black;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                color: white;
+            }
+            
+            
+            .browseLinks{
+                margin:auto;
+                margin-top:20px;
+                width:70%;
+            }
+            .categoriesLink{
+                float:left;
+                font-size: 14px;
+                color: white;
+            }
+            .locationsLink{
+                font-size:14px;
+                color:#FFF;
+                margin-left: 0%;
+                float: right;
+            }
+
+            /*Browsing categories and locations popup*/
+
+                .locationPopUp{
+                    position:absolute;
+                    top:0px;
+                    bottom:0px;
+                    right:0px;
+                    left:0px;
+                    background-color:white;
+                    color:white;
+                    display:none;
+                }
+
+                .locationPopUpClose{
+                    float:right;
+                }
+
+                .browseLocationsSearch{
+
+                }
+
+                .locationsList{
+
+                }
+
+                .inputPopUp{
+                    position:absolute;
+                    top:0px;
+                    bottom:0px;
+                    right:0px;
+                    left:0px;
+                    background-color:white;
+                    color:white;
+                    display:none;
+                }
+                .inputPopUpHeader{
+                    height: 40px;
+                    padding-top: 20px;
+                    background-color: #e1e8e9;
+                    padding-bottom: 30px;
+                }
+                .inputPopUpClose{
+                    float: left;
+                    color: #F00;
+                    font-size: 12px;
+                    margin-left: 8%;
+                }
+                .selectCategoryText{
+                    color:black;
+                    font-weight:500;
+                }
+                .browseCategoriesSearch{
+                    
+                }
+                .browseCategoriesSearchInput{
+                    height: 40px;
+                    width: 100%;
+                    color:black;
+                    border:1px solid #ddd;
+                    padding-left:10px;
+                }
+                .categoriesList{
+                    width: 95%;
+                    background: white none repeat scroll 0% 0%;
+                    color: black;
+                    margin: -15px auto 0px;
+                }
+                .categoriesList ul{
+                    list-style-type: none;
+                    padding:0;
+                }
+                .categoriesList ul li{
+                    padding-top: 10px;
+                    height:40px;
+                    border-bottom:1px solid #ddd;
+                }
+                .categoryLogo{
+                    clear:left;
+                    float:left;
+                }
+                .categoryLogo img{
+                    margin-left: 10px;
+                }
+                
+                .categoryContent{
+                    font-size:16px;
+                    text-align: left;
+                    margin-left: 10%;
+                }
+
+                .locationPopUpHeader{
+                    height: 40px;
+                    padding-top: 20px;
+                    background-color: #e1e8e9;
+                    padding-bottom: 30px;
+
+                }
+                .locationPopUpClose{
+                    float: left;
+                    color: #F00;
+                    font-size: 12px;
+                    margin-left: 8%;
+                }
+                .selectLocationText{
+                    color:black;
+                    font-weight:500;
+                }
+                .browseLocationsSearch{
+                    width:100%;
+                }
+                .browseLocationsSearchInput{
+                    height: 40px;
+                    width: 100%;
+                    color:black;
+                    border:1px solid #ddd;
+                    padding-left:10px;
+                }
+                .locationsList{
+                    width: 95%;
+                    background: white none repeat scroll 0% 0%;
+                    color: black;
+                    margin: -15px auto 0px;
+                }
+                .locationsList ul{
+                    list-style-type: none;
+                    padding:0;
+                }
+                .locationsList ul li{
+                    padding-top: 10px;
+                    height:40px;
+                    border-bottom:1px solid #ddd;
+                }
+                .locationContent{
+                    font-size:16px;
+                    text-align: left;
+                }
+            /*Browsing categories and locations popup finish*/
+        /*Full search div which occupies entire page finish*/
+
+        /***********************************/
+
+        /*Side menu which shows up with toggle icon in header START*/
+
+            .sideMenu{
+                position:absolute;
+                height:100%;
+                width:100%;             
+                color:white;
+                top:0;
+                right:100%;
+            }
+            .sideMenuSection{
+                float:left;
+                height:100%;
+                width:85%;
+                background-color:rgba(54,52,78,0.95);
+            }
+
+            .sideMenu_user_profile{
+                padding: 20px;
+            }
+
+            .sideMenu_profile_image{
+                text-align:center
+            }
+            .sideMenu_profile_image img{
+                width:130px;
+                height:30px; 
+            }
+            .sideMenuList{
+                clear: left;
+                margin-left: 20px;
+                width: 90%;
+                font-size: 20px;
+                margin-top: 0px;
+            }
+            .sideMenuListItems{
+                padding:25px;
+            }
+
+            .sideMenuHideArea{
+                display:inline-block;
+                height:100%;
+                width:15%;
+                background-color:transparent;
+            }
+        /*Side menu which shows up with toggle icon in header FINISH*/
 		
 		.wrapper{
 			
