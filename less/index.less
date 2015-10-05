@@ -1,0 +1,178 @@
+/*Clear*/
+@import "clear";
+@import "animate.css";
+@xs-vvvmin:50px;
+@xs-vvmin:240px;
+@xs-vmin: 320px;
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+
+@xs-vvvmax: (@xs-vvmin - 1);
+@xs-vvmax: (@xs-vmin - 1);
+@xs-vmax: (@xs-min - 1);
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+
+
+@vvsmphone:        ~"only screen and (min-width: @{xs-vvvmin}) and (max-width: @{xs-vvvmax})";
+@vsmphone:        ~"only screen and (min-width: @{xs-vvmin}) and (max-width: @{xs-vvmax})";
+@smphone:        ~"only screen and (min-width: @{xs-vmin}) and (max-width: @{xs-vmax})";
+@phone-strict:   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large:          ~"only screen and (min-width: @{lg-min})";
+
+.user-page{
+	@media @large { 
+
+		
+		.wrapper{
+			
+		}
+    	.image-background{   
+    		background: url(..//images/image1.jpg) no-repeat fixed;  
+            background-size: cover;
+            
+        }   
+        
+        .mastContent{
+        	position: absolute;
+        	top:40px;
+        	left:0;
+        	right:0;
+        	text-align: center;
+        	margin:auto;
+        	width:60%;
+        	color:white;
+
+        }
+        .heading{
+        	font-weight: bold;
+		    color: #c8ef43;
+		    font-size: 2.2rem;
+		    
+        }
+        .content{
+        	line-height: 2rem;
+    		width: 100%;
+    		
+        }
+        .openPositionsButton{
+        	background: none;
+		    padding: 0.8rem;
+		    border: 1px solid #c8ef43;
+		    font-size: 1.1rem;
+		    color: #c8ef43;
+        }
+        .teamHeader{
+        	margin-top: 50px;
+        	text-align: center;
+        }
+        .employeeThreeList{
+        	margin-top:50px;
+        	height:150px;
+        	
+        }
+        .employeeInfoSection{
+        	margin:auto;
+        	width:80%;
+        	height:100%;
+        }
+        .employeeInfo{
+        	display: inline-block;
+        	width:33%;
+
+        }
+        .employeeImage{
+        	border-radius:100%;
+        	width:48px;
+        	height:48px;
+        	float:left;
+        }
+        .careersWrapper{
+        	margin: auto;
+    		width: 80%;
+        }
+        .careersHeader{
+        	text-align: center;
+        }
+        .careerNote{
+        	text-align: center;
+        }
+        .oppurtunityEntity{
+        	border-bottom: 1px solid red;
+		    padding-bottom: 20px;
+		    padding-top: 20px;
+        }
+        .jobEntity{
+        	margin-top: 20px;
+        }
+        .jobTitle{
+        	display: inline-block;
+		    width: 49%;
+		    text-align: left;
+		    font-size: 20px;
+        }
+        .jobTitleLink{
+        	margin: 0;
+		    padding: 0;
+		    font-size: 100%;
+		    vertical-align: baseline;
+		    background: transparent;
+		    color: #32a9db;
+		    text-decoration: none;
+        }
+        .jobCompensation{
+        	display: inline-block;
+		    width: 49%;
+		    text-align: right;
+        }
+        .jobDescription{
+        	margin-top:10px;
+        }
+        .jobTags{
+        	margin-top:20px;
+        }
+        .tagsList{
+        	list-style-type: none;
+        	padding: 0;
+        	margin:0;
+        }
+        .tagsList li{
+        	display: inline;
+        	color:brown;
+        }
+	}
+
+	@media @desktop-strict{ 
+		@import "desktop-strict";
+	}
+	@media @tablet-strict {
+		@import "tablet-strict";
+	}
+	@media @phone-strict {
+		@import "phone-strict";
+	}
+	@media @smphone {
+		@import "smphone";
+	}
+
+	@media @vsmphone {
+		@import "vsmphone";	
+	}
+	@media @vvsmphone {
+		@import "vvsmphone";	
+	}
+}
+
+
+
+/*Modal styles*/
+
+
+
+
