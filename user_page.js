@@ -16,7 +16,7 @@
         $(".searchSectionIconButton").click(function(){
         $(".fullSearch").show();
             $(window).scrollTop(0);
-            console.log($(".fullSearch").scrollTop());
+            
             $(".fullSearch").height($(document).height());
     });
     $('body').on('click','.searchSectionCloseButton',function(){
@@ -25,12 +25,12 @@
         $(".categoriesLink").click(function(){
             $(".inputPopUp").show();
             $(window).scrollTop(0);
-            console.log($(".inputPopUp").scrollTop());
+            
         });
         $(".locationsLink").click(function(){
             $(".locationPopUp").show();
             $(window).scrollTop(0);
-            console.log($(".locationPopUp").scrollTop());
+            
         });
         $(".inputPopUpClose").click(function(){
             $(".inputPopUp").hide();
@@ -67,9 +67,9 @@
 		       	hH[i] = $($('.employeeThreeList')[i]).outerHeight();
 		       	var wH = $(window).height();
 		       	var wS = $(this).scrollTop();
-			   	console.log((hT[i]-wH) , wS);
+			   	
 		  		if (wS > (hT[i]+hH[i]-wH)){
-		   			console.log($('.employeeThreeList')[i]);  
+		   			
 		   		}
 		
     		}
