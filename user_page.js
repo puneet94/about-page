@@ -1,6 +1,17 @@
 (function(){
     $(document).ready(function(){
-      
+        $('.videoPopUp').hide();
+            
+            $('#videoPlayButton').on('click',function(){
+                $('#vidtest').height($(window).height()-7);
+                $('.videoPopUp').show();
+                $('#vidtest').get(0).play();
+               
+            });
+            $('#closeVideoButton').on('click',function(){
+                $('.videoPopUp').hide();
+               $('#vidtest').get(0).pause();
+            });
         $('.toggle_button').on('click',function(){
             $('.sideMenu').height($(document).height());
           $('.sideMenu').animate({'right':'0%'},function(){
