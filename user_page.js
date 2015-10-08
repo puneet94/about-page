@@ -3,9 +3,10 @@
         $('.videoPopUp').hide();
             $('#vidtest').height($(window).height()-7);
             $('#videoPlayButton').on('click',function(){
-                
-                $('.videoPopUp').show();
+                $('#vidtest').click();
                 $('#vidtest').get(0).play();
+                $('.videoPopUp').show();
+                
                
             });
             $('#closeVideoButton').on('click',function(){
