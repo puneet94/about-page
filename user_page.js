@@ -5,12 +5,12 @@
             $('#videoPlayButton').on('click',function(){
                 $('#vidtest').click();
                 $('#vidtest').get(0).play();
-                $('.videoPopUp').show();
+                $('.videoPopUp').fadeIn( "slow");
                 
                
             });
             $('#closeVideoButton').on('click',function(){
-                $('.videoPopUp').hide();
+                $('.videoPopUp').fadeOut();
                $('#vidtest').get(0).pause();
             });
         $('.toggle_button').on('click',function(){
