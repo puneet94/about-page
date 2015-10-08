@@ -1,7 +1,7 @@
 (function(){
     $(document).ready(function(){
         $('.videoPopUp').hide();
-            $('#vidtest').height($(window).height()-7);
+            $('#vidtest').height($(window).height());
             $('#videoPlayButton').on('click',function(){
                 $('#vidtest').click();
                 $('#vidtest').get(0).play();
