@@ -1,9 +1,17 @@
 /*Clear*/
 @import "clear";
 @import "animate.css";
-.thumb-image{
-    width:100px;
-    height:100px;
+@font-face {
+  font-family: 'Circular Lenito Bold';
+  src: url('..//fonts/lineto-circular-pro-bold.eot'); /* IE9 Compat Modes */
+  src: url('..//fonts/lineto-circular-pro-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('..//fonts/lineto-circular-pro-bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('..//fonts/lineto-circular-pro-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('..//fonts/lineto-circular-pro-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('..//fonts/lineto-circular-pro-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+.angellist_jobs-compensation{
+    display: none;
 }
 @xs-vvvmin:50px;
 @xs-vvmin:240px;
@@ -153,15 +161,16 @@
 		    
         }
         .heading h1{
-        	margin-top: 20%;
+        	margin-top: 15%;
             font-size: 1.5em;
             font-weight: 300;
-            color: #E94643;
+            color: white;
         }
         .content{
         	line-height: 2rem;
     		width: 100%;
-    		font-weight:100;	
+    		font-weight:100;
+            margin-top:20%;	
     		
         }
          .content h3{
@@ -179,6 +188,24 @@
 		    font-size: 1.1rem;
 		    color: #c8ef43;
         }
+        .bodyWrapper {
+           margin: auto;
+            width: 90%;
+            background-color:white;
+        }
+        .iconsSection{
+            text-align: center;
+        }
+        .iconArticle{
+            display: inline-block;
+            margin:10px;
+        }
+        .iconImage{
+
+        }
+        .iconImage img{
+            width:100px;
+        }
         .teamHeader{
         	margin-top: 50px;
         	text-align: center;
@@ -189,35 +216,304 @@
 		}
         .employeeThreeList{
         	margin-top:50px;
-        	height:150px;
+        	//height:150px;
         	
         }
         .employeeInfoSection{
         	margin:auto;
-        	width:80%;
+        	width:100%;
         	height:100%;
         }
         .employeeInfo{
         	display: inline-block;
         	width:33%;
-
+            text-align: center;
         }
         .employeeImage{
+            
         	border-radius:100%;
         	width:100px;
         	height:100px;
-        	float:left;
+        	
+            /* Firefox 
+            -moz-transition: all 0.8s ease;
+             WebKit 
+            -webkit-transition: all 0.8s ease;
+            Opera 
+            -o-transition: all 0.8s ease;
+            transition: all 0.8s ease;*/
+        }
+        
+        .employeeImage_Rotate {
+            
+            /*opacity: 1;
+            
+            -moz-transform:  rotateY(180deg) ;
+            
+            -webkit-transform:  rotateY(180deg) ;
+            
+            -o-transform:  rotateY(180deg) ;
+            
+            transform:  rotateY(180deg) ;
+            z-index: 1000;*/
+        
         }
         .employeeName {
-		    font-weight: 900;
-		    text-align: center;
-		    font-size: 14px;
-		    margin-top:5%;
-		}
-		.employeeDesignation {
-		    text-align: center;
-		    font-size: 14px;
-		}
+            font-weight: 900;
+            text-align: center;
+            font-size: 14px;
+            margin-top:5%;
+        }
+        .employeeDesignation {
+            text-align: center;
+            font-size: 14px;
+        }
+        .employeeLine{
+            text-align: center;
+            font-size: 14px;
+            background-color: #ddd;
+            color: #0087cc;
+            margin-top: -170px;
+            padding-top: 65px;
+            height: 170px;
+            width: 70%;
+            margin-left: 40px;
+        }
+        /*css rotate/flip animations*/
+                        .card {
+                perspective: 1000px;
+                -webkit-perspective: 1000px;
+                -moz-perspective: 1000px;
+                -o-perspective: 1000px;
+                -ms-perspective: 1000px;
+               
+            }
+
+            .card .content2 {
+                transition: 0.5s ease-out;
+                -webkit-transition: 0.5s ease-out;
+                -moz-transition: 0.5s ease-out;
+                -o-transition: 0.5s ease-out;
+                -ms-transition: 0.5s ease-out;
+                transform-style: preserve-3d;
+                -webkit-transform-style: preserve-3d;
+                -moz-transform-style: preserve-3d;
+                -o-transform-style: preserve-3d;
+                -ms-transform-style: preserve-3d;
+
+                /* content2 backface is visible so that static content2 still appears */
+                backface-visibility: visible;
+                -webkit-backface-visibility: visible;
+                -moz-backface-visibility: visible;
+                -o-backface-visibility: visible;
+                -ms-backface-visibility: visible;
+
+
+                
+                
+            }
+            .card.applyflip .content2 {
+                transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+            }
+
+
+            .card .content2 .cardStatic {
+                /* Half way through the card flip, rotate static content2 to 0 degrees */
+                transition: 0s linear 0.17s;
+                -webkit-transition: 0s linear 0.17s;
+                -moz-transition: 0s linear 0.17s;
+                -o-transition: 0s linear 0.17s;
+                -ms-transition: 0s linear 0.17s;
+                transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -o-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+
+                
+            }
+
+            .card.applyflip .content2 .cardStatic {
+                /* Half way through the card flip, rotate static content2 to -180 degrees -- to negate the flip and unmirror the static content2 */
+                transition: 0s linear 0.17s;
+                -webkit-transition: 0s linear 0.17s;
+                -moz-transition: 0s linear 0.17s;
+                -o-transition: 0s linear 0.17s;
+                -ms-transition: 0s linear 0.17s;
+                transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -o-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+            }
+
+            
+
+            .card .content2 .cardFront, .card .content2 .cardBack {
+                /* Backface visibility works great for all but IE. As such, we mark the backface visible in IE and manage visibility ourselves */
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -o-backface-visibility: hidden;
+                -ms-backface-visibility: visible;
+            
+            }
+            .card .content2 .cardFront, .card.applyflip .content2 .cardFront {
+                transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -o-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+            }
+
+            .card .content2 .cardBack, .card.applyflip .content2 .cardBack {
+                transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg);
+                -moz-transform: rotateY(-180deg);
+                -o-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+            }
+
+            .card .content2 .cardFront, .card.applyflip .content2 .cardBack {
+                /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
+                animation: stayvisible 0.5s both;
+                -webkit-animation: stayvisible 0.5s both;
+                -moz-animation: stayvisible 0.5s both;
+                -o-animation: stayvisible 0.5s both;
+                -ms-animation: donothing 0.5s;
+                -ms-transition: visibility 0s linear 0.17s;
+                visibility: visible;
+            }
+            .card.applyflip .content2 .cardFront, .card .content2 .cardBack {
+                /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
+                animation: stayvisible 0.5s both;
+                -webkit-animation: stayvisible 0.5s both;
+                -moz-animation: stayvisible 0.5s both;
+                -o-animation: stayvisible 0.5s both;
+                -ms-animation: donothing 0.5s;
+                -ms-transition: visibility 0s linear 0.17s;
+                visibility: hidden;
+            }
+            @keyframes stayvisible { from { visibility: visible; } to { visibility: visible; } }
+            @-webkit-keyframes stayvisible { from { visibility: visible; } to { visibility: visible; } }
+            @-moz-keyframes stayvisible { from { visibility: visible; } to { visibility: visible; } }
+            @-o-keyframes stayvisible { from { visibility: visible; } to { visibility: visible; } }
+            @-ms-keyframes donothing { 0% { } 100% { } }
+        /*animation finish*/
+        .lineSeparator{
+            margin:auto;
+            width:100%;
+            height:3px;
+            margin-top:30px;
+            background-color:#ddd;
+        }
+        .contributorsHeader{
+            margin-top: 50px;
+            text-align: center;
+        }
+        .previousEontributorsSection {
+            overflow-x: hidden;
+            overflow-y:hidden;
+        }
+        .previousEmployeeThreeList{
+            margin-top:50px;
+            height:100px;
+            text-align: center;
+            
+        }
+        .previousEmployeeInfoSection{
+            margin:auto;
+            width:100%;
+            height:100%;
+        }
+        .previousEmployeeInfo{
+            display: inline-block;
+            width:19%;
+
+        }
+        .previousEmployeeImage{
+            
+            border-radius:100%;
+            width:50px;
+            height:50px;
+            
+            /* Firefox */
+            -moz-transition: all 0.8s ease;
+            /* WebKit */
+            -webkit-transition: all 0.8s ease;
+            /* Opera */
+            -o-transition: all 0.8s ease;
+            /* Standard */
+            transition: all 0.8s ease;
+        }
+        
+        .previousEmployeeImage_Rotate {
+            
+            opacity: 1;
+            /* Firefox */
+            -moz-transform:  rotateY(360deg) ;
+            /* WebKit */
+            -webkit-transform:  rotateY(360deg) ;
+            /* Opera */
+            -o-transform:  rotateY(360deg) ;
+            /* Standard */
+            transform:  rotateY(360deg) ;
+            z-index: 1000;
+        
+        }
+        .cultureSection {
+            margin-top: 50px;
+        }
+        .cultureHeading{
+            text-align: center;
+        }
+        .cultureSectionSegments {
+            margin: auto;
+            width: 100%;
+        }
+        .cultureArticle{
+             width: 25%;
+            height: 200px;
+            color:white;
+            float: left;
+            text-align: center;
+            padding-top: 4%;
+            text-transform: lowercase;
+        }
+        .cultureArticleHeading{
+            font-weight:bolder;
+        }
+        .cultureArticleText{
+            font-weight:lighter;
+        }
+        #culture_one{
+            background-color:#00c27c;
+        }
+        #culture_two{
+            background-color:#8d349f;
+        }
+        #culture_three{
+            background-color:rgb(248,185,20);
+        }
+        #culture_four{
+            background-color:#3d3da3;
+        }
+        #culture_five{
+            background-color:#6d39a1;
+        }
+        #culture_six{
+            background-color:#00a3cd;
+        }
+        #culture_seven{
+            background-color:#00c5b5;
+        }
+        #culture_eight{
+            background-color:#647c2a;
+        }
         .careersWrapper{
         	margin: auto;
     		width: 80%;

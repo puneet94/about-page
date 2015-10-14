@@ -1,9 +1,40 @@
 (function(){
     $(document).ready(function(){
         var filesJSON = [];
-        
+        $('.bodyWrapper').height(500+$('body').height());
+        $('.card').hover(function(){
+            $(this).toggleClass('applyflip');
+        });
 
-
+        /*$('.employeeInfo').mouseenter(function() {
+            emp_img = $(this).find('.employeeImage');
+            emp_name = $(this).find('.employeeName');
+            emp_desig = $(this).find('.employeeDesignation');
+            emp_line = $(this).find('.employeeLine');
+            //emp_name.fadeOut();
+            //emp_desig.fadeOut();
+            //emp_line.fadeIn();
+            var src = emp_img.attr( "src" );
+            var src2 = emp_img.data( "src2" );
+            emp_img.attr( "src",src2 );
+            emp_img.data( "src2",src );
+            emp_img.addClass('employeeImage_Rotate')
+            
+        })
+            .mouseleave(function() {
+                emp_img = $(this).find('.employeeImage');
+                emp_name = $(this).find('.employeeName');
+                emp_desig = $(this).find('.employeeDesignation');
+                emp_line = $(this).find('.employeeLine');
+                //emp_name.fadeIn();
+                //emp_desig.fadeIn();
+                //emp_line.fadeOut();
+                var src = emp_img.attr( "src" );
+                var src2 = emp_img.data( "src2" );
+                emp_img.attr( "src",src2 );
+                emp_img.data( "src2",src );
+                emp_img.removeClass('employeeImage_Rotate')
+            });*/
         $('.videoPopUp').hide();
         $('#videoPlayButton').on('click',function(){
             $('#vidtest').click();
@@ -78,7 +109,19 @@
                   }
                   )
         wow.init();
-        $('.image-background').css("height", 300+$(".mastContent").height());
+        function isMobile() {
+          try{ document.createEvent("TouchEvent"); return true; }
+          catch(e){ return false; }
+        }
+        if(isMobile()){
+            $('.image-background').css("height", 150+$('.mastContent').height());    
+            $('.bodyWrapper').height($('body')[0].scrollHeight);
+        }
+        else{
+            $('.image-background').css("height", $(window).height()); 
+            $('.bodyWrapper').height(500+$('body').height());   
+        }
+        
         $(window).scroll(function() {
 
           var hT = [];
