@@ -119,7 +119,7 @@
         }
         else{
             $('.image-background').css("height", $(window).height()); 
-            $('.bodyWrapper').height(500+$('body').height());   
+            $('.bodyWrapper').height(100+$(document).height());   
         }
         
         $(window).scroll(function() {
