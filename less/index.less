@@ -13,6 +13,30 @@
 .angellist_jobs-compensation{
     display: none;
 }
+@keyframes pound {
+     from { 
+        -webkit-transform: none; 
+        -moz-transform: none;
+        -o-transform: none; 
+        -ms-transform: none;
+        transform:none;
+    }
+    50% { 
+        -webkit-transform:  scale(1.4); 
+        -moz-transform:  scale(1.4);
+        -o-transform:  scale(1.4); 
+        -ms-transform:  scale(1.4);
+        transform: scale(1.4); 
+
+    }
+    to { 
+        -webkit-transform:  scale(1.5); 
+        -moz-transform:  scale(1.5);
+        -o-transform:  scale(1.5); 
+        -ms-transform:  scale(1.5);
+        transform: scale(1.5); 
+    }
+}
 @xs-vvvmin:50px;
 @xs-vvmin:240px;
 @xs-vmin: 320px;
@@ -202,6 +226,7 @@
             display: inline-block;
             width: 15%;
             margin: 0 auto;
+            margin-top: 20px;
             font-family: 'Nunito', sans-serif;
         }
         .iconImage, .iconContent,.iconHeader,.iconText{
@@ -289,6 +314,32 @@
             width: 70%;
             margin-left: 40px;
         }
+        .employeeEmail{
+            color:black;
+            margin-top:10px;
+            margin-right:10px;
+            
+        }
+        .employeeLinkedin{
+            color:black;
+            margin-top:10px;
+            
+            margin-left:10px;
+        }
+        
+        .employeeEmail:hover{
+            animation: pound 0.5s infinite;
+            
+            color:#d14836;
+        }
+        .employeeLinkedin:hover{
+            animation: pound 1s infinite;
+            color:#0087cc;
+            
+        }
+
+
+        
         /*css rotate/flip animations*/
                         .card {
                 perspective: 1000px;
@@ -509,7 +560,7 @@
         .cultureSectionSegments2 {
             margin: auto;
             width: 100%;
-            background: url(..//images/banner3.png) no-repeat ;  
+            background: url(..//images/bannerCulture.png) no-repeat ;  
             -webkit-background-size: cover;
               -moz-background-size: cover;
               -o-background-size: cover;

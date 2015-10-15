@@ -1,7 +1,7 @@
 (function(){
     $(document).ready(function(){
         var filesJSON = [];
-        $('.bodyWrapper').height(500+$('body').height());
+        
         $('.card').hover(function(){
             $(this).toggleClass('applyflip');
         });
@@ -103,7 +103,7 @@
         {
                       boxClass:     'wow',      // default
                       animateClass: 'animated', // default
-                      offset:       100,          // default
+                      offset:       0,          // default
                       mobile:       false,       // default
                       live:         true        // default
                   }
@@ -115,11 +115,11 @@
         }
         if(isMobile()){
             $('.image-background').css("height", 150+$('.mastContent').height());    
-            $('.bodyWrapper').height($('body')[0].scrollHeight);
+            
         }
         else{
             $('.image-background').css("height", $(window).height()); 
-            $('.bodyWrapper').height(100+$(document).height());   
+            
         }
         
         $(window).scroll(function() {
