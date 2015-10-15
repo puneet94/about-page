@@ -1,7 +1,9 @@
 (function(){
     $(document).ready(function(){
         var filesJSON = [];
-        
+        $('.openPositionsButton').on('click',function(){
+          window.location.href = "http://www.yallaspree.com/homes/contact_us";
+        });
         $('.card').hover(function(){
             $(this).toggleClass('applyflip');
         });
