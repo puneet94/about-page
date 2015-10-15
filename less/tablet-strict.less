@@ -1,220 +1,203 @@
-
-
-         
-        .top_bar {
-            background-color: #2c343b;
-            /*font-family: ProximaNovaRegular;*/
-            padding: 10px 2px 0px 2px;
-        }
-        .imgSection {
-            width: 20%;
-            display: inline-block;
-            text-align: center
-        }
-        .logo {
-            
-            margin: auto;
-            width: 70%
-        
-        }
-        .toggle_button{
-            display: none;
-        }
-        .searchSection {
-            width: 50%;
-            display: inline-block;
-            text-align: center;
-            position: relative;
-            top:-15px;
-        }
-        .query {
-            height: 40px;
-            border-radius: 6px;
-            font-size: 18px;
-            width: 48%;
-            padding-left:10px;
-        }
-        .location {
-            height: 40px;
-            border-radius: 6px;
-            font-size: 18px;
-            background: url(/website/images/toolbar_find.png) no-repeat 100% 6px;
-            background-color: #fff;
-            width: 48%;
-            padding-left:10px;
-        }
-        .authSection {
-            width: 29%;
-            display: inline-block;
-            text-align: center;
-            position: relative;
-            top:-15px;
-        }
-        .login {
-            background-color: #E94643;
-            color: #fff;
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            border-style: solid;
-            border-color: #E94643;
-            font-size: 15px;
-            border-radius: 2px;
-            
-        }
-        .signup {
-            background-color: #E94643;
-            color: #fff;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            border-style: solid;
-            border-color: #E94643;
-            margin-left: 30px;
-            font-size: 15px;
-            border-radius: 2px;
-            padding-left: 15px;
-            padding-right: 15px
-        }
-        .fullSearch, .searchSectionToggle, .searchSectionSearchButton, .searchSectionIconButton{
-            display: none;
-        }
-        .sideMenu{
-            display: none;
-        }
-        .wrapper{
-            
-        }
-         .image-background{   
-            background: url(..//images/image1.jpg) no-repeat fixed;  
-            -webkit-background-size: cover;
-              -moz-background-size: cover;
-              -o-background-size: cover;
-              background-size: cover;
-              -webkit-overflow-scrolling: touch;
-              -moz-overflow-scrolling: touch;
-              -o-overflow-scrolling: touch;
-
-  
-            
-        }   
-        
-        .mastContent{
-            position: absolute;
-            top:40px;
-            left:0;
-            right:0;
-            text-align: center;
-            margin:auto;
-            width:60%;
-            color:white;
-
-        }
-        .heading{
-            font-weight: bold;
-            color: #c8ef43;
-            font-size: 2.2rem;
-            
-        }
-        .heading h1{
-            margin-top: 15%;
-            font-size: 1.5em;
-            font-weight: 300;
-            color: white;
-        }
-        .content{
-            line-height: 2rem;
-            width: 100%;
-            font-weight:100;
-            margin-top:20%; 
-            font-family: 'Nunito', sans-serif;
-            
-        }
-         .content h3{
-            font-weight:100;    
-            
-        }
-        .content h4{
-            font-weight:100;    
-            
-        }
-        .openPositionsButton{
-            background: none;
-            padding: 0.8rem;
-            border: 1px solid #c8ef43;
-            font-size: 1.1rem;
-            color: #c8ef43;
-        }
-        .bodyWrapper {
-           margin: auto;
-            width: 90%;
-            background-color:white;
-        }
-        .iconsSection{
-            text-align: center;
-        }
-        .iconArticle{
-            vertical-align: top;
-            display: inline-block;
-            width: 15%;
-            margin: 0 auto;
-            margin-top:20px;
-            font-family: 'Nunito', sans-serif;
-        }
-        .iconImage, .iconContent,.iconHeader,.iconText{
-            margin:0;
-            padding:0;
-        }
-        .iconText{
-            font-weight:lighter;
- 
-        }
-        .iconImage img{
-            width:100px;
-        }
-        .teamHeader{
-            margin-top: 50px;
-            text-align: center;
-            clear:both;
-        }
-        .contributorsSection {
-            overflow-x: hidden;
-            overflow-y:hidden;
-        }
-        .employeeThreeList{
-            margin-top:50px;
-            //height:150px;
-             font-family: 'Nunito', sans-serif;
-            
-        }
-        .employeeInfoSection{
-            margin:auto;
-            width:100%;
-            height:100%;
-        }
-        .employeeInfo{
-            display: inline-block;
-            width:32%;
-            text-align: center;
-        }
-        .employeeImage{
-            
-            border-radius:100%;
-            width:100px;
-            height:100px;
-            
-            /* Firefox 
+.top_bar {
+    background-color: #2c343b;
+    /*font-family: ProximaNovaRegular;*/
+    
+    padding: 10px 2px 0px 2px;
+}
+.imgSection {
+    width: 20%;
+    display: inline-block;
+    text-align: center
+}
+.logo {
+    margin: auto;
+    width: 70%
+}
+.toggle_button {
+    display: none;
+}
+.searchSection {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+.query {
+    height: 40px;
+    border-radius: 6px;
+    font-size: 18px;
+    width: 48%;
+    padding-left: 10px;
+}
+.location {
+    height: 40px;
+    border-radius: 6px;
+    font-size: 18px;
+    background: url(/website/images/toolbar_find.png) no-repeat 100% 6px;
+    background-color: #fff;
+    width: 48%;
+    padding-left: 10px;
+}
+.authSection {
+    width: 29%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+.login {
+    background-color: #E94643;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: solid;
+    border-color: #E94643;
+    font-size: 15px;
+    border-radius: 2px;
+}
+.signup {
+    background-color: #E94643;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: solid;
+    border-color: #E94643;
+    margin-left: 30px;
+    font-size: 15px;
+    border-radius: 2px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+.fullSearch,
+.searchSectionToggle,
+.searchSectionSearchButton,
+.searchSectionIconButton {
+    display: none;
+}
+.sideMenu {
+    display: none;
+}
+.wrapper {} .image-background {
+    background: url(..//images/image1.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+    -o-overflow-scrolling: touch;
+}
+.mastContent {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    color: white;
+}
+.heading {
+    font-weight: bold;
+    color: #c8ef43;
+    font-size: 2.2rem;
+}
+.heading h1 {
+    margin-top: 15%;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: white;
+}
+.content {
+    line-height: 2rem;
+    width: 100%;
+    font-weight: 100;
+    margin-top: 20%;
+    font-family: 'Nunito', sans-serif;
+}
+.content h3 {
+    font-weight: 100;
+}
+.content h4 {
+    font-weight: 100;
+}
+.openPositionsButton {
+    background: none;
+    padding: 0.8rem;
+    border: 1px solid #c8ef43;
+    font-size: 1.1rem;
+    color: #c8ef43;
+}
+.bodyWrapper {
+    margin: auto;
+    width: 90%;
+    background-color: white;
+}
+.iconsSection {
+    text-align: center;
+}
+.iconArticle {
+    vertical-align: top;
+    display: inline-block;
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+.iconImage,
+.iconContent,
+.iconHeader,
+.iconText {
+    margin: 0;
+    padding: 0;
+}
+.iconText {
+    font-weight: lighter;
+}
+.iconImage img {
+    width: 100px;
+}
+.teamHeader {
+    margin-top: 50px;
+    text-align: center;
+    clear: both;
+}
+.contributorsSection {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.employeeThreeList {
+    margin-top: 50px;
+    //height:150px;
+    font-family: 'Nunito', sans-serif;
+}
+.employeeInfoSection {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.employeeInfo {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+.employeeImage {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    /* Firefox 
             -moz-transition: all 0.8s ease;
              WebKit 
             -webkit-transition: all 0.8s ease;
             Opera 
             -o-transition: all 0.8s ease;
             transition: all 0.8s ease;*/
-        }
-        
-        .employeeImage_Rotate {
-            
-            /*opacity: 1;
+}
+.employeeImage_Rotate {
+    /*opacity: 1;
             
             -moz-transform:  rotateY(180deg) ;
             
@@ -224,292 +207,310 @@
             
             transform:  rotateY(180deg) ;
             z-index: 1000;*/
-        
-        }
-        .employeeName {
-            font-weight: 900;
-            text-align: center;
-            font-size: 14px;
-            margin-top:5%;
-        }
-        .employeeDesignation {
-            text-align: center;
-            font-size: 14px;
-        }
-        .employeeLine{
-            text-align: center;
-            font-size: 14px;
-            background-color: #ddd;
-            color: #0087cc;
-            margin-top: -170px;
-            padding-top: 40px;
-            height: 170px;
-            width: 70%;
-            margin-left: 40px;
-        }
-         .employeeEmail{
-            color:black;
-            margin-top:10px;
-            margin-right:10px;
-            
-        }
-        .employeeLinkedin{
-            color:black;
-            margin-top:10px;
-            
-            margin-left:10px;
-        }
-        
-        .employeeEmail:hover{
-            animation: pound 0.5s infinite;
-            
-            color:#d14836;
-        }
-        .employeeLinkedin:hover{
-            animation: pound 1s infinite;
-            color:#0087cc;
-            
-        }
-        /*css rotate/flip animations*/
-                        .card {
-                perspective: 1000px;
-                -webkit-perspective: 1000px;
-                -moz-perspective: 1000px;
-                -o-perspective: 1000px;
-                -ms-perspective: 1000px;
-               
-            }
+}
+.employeeName {
+    font-weight: 900;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5%;
+}
+.employeeDesignation {
+    text-align: center;
+    font-size: 14px;
+}
+.employeeLine {
+    text-align: center;
+    font-size: 14px;
+    background-color: #ddd;
+    color: #0087cc;
+    margin-top: -170px;
+    padding-top: 40px;
+    height: 170px;
+    width: 70%;
+    margin-left: 40px;
+}
+.employeeEmail {
+    color: black;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.employeeLinkedin {
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.employeeEmail:hover {
+    animation: pound 0.5s infinite;
+    color: #d14836;
+}
+.employeeLinkedin:hover {
+    animation: pound 1s infinite;
+    color: #0087cc;
+}
+/*css rotate/flip animations*/
 
-            .card .content2 {
-                transition: 0.5s ease-out;
-                -webkit-transition: 0.5s ease-out;
-                -moz-transition: 0.5s ease-out;
-                -o-transition: 0.5s ease-out;
-                -ms-transition: 0.5s ease-out;
-                transform-style: preserve-3d;
-                -webkit-transform-style: preserve-3d;
-                -moz-transform-style: preserve-3d;
-                -o-transform-style: preserve-3d;
-                -ms-transform-style: preserve-3d;
+.card {
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    -ms-perspective: 1000px;
+}
+.card .content2 {
+    transition: 0.5s ease-out;
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    -ms-transition: 0.5s ease-out;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    /* content2 backface is visible so that static content2 still appears */
+    
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -o-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+}
+.card.applyflip .content2 {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+}
+.card .content2 .cardStatic {
+    /* Half way through the card flip, rotate static content2 to 0 degrees */
+    
+    transition: 0s linear 0.17s;
+    -webkit-transition: 0s linear 0.17s;
+    -moz-transition: 0s linear 0.17s;
+    -o-transition: 0s linear 0.17s;
+    -ms-transition: 0s linear 0.17s;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+}
+.card.applyflip .content2 .cardStatic {
+    /* Half way through the card flip, rotate static content2 to -180 degrees -- to negate the flip and unmirror the static content2 */
+    
+    transition: 0s linear 0.17s;
+    -webkit-transition: 0s linear 0.17s;
+    -moz-transition: 0s linear 0.17s;
+    -o-transition: 0s linear 0.17s;
+    -ms-transition: 0s linear 0.17s;
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+}
+.card .content2 .cardFront,
+.card .content2 .cardBack {
+    /* Backface visibility works great for all but IE. As such, we mark the backface visible in IE and manage visibility ourselves */
+    
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: visible;
+}
+.card .content2 .cardFront,
+.card.applyflip .content2 .cardFront {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+}
+.card .content2 .cardBack,
+.card.applyflip .content2 .cardBack {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+}
+.card .content2 .cardFront,
+.card.applyflip .content2 .cardBack {
+    /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
+    
+    animation: stayvisible 0.5s both;
+    -webkit-animation: stayvisible 0.5s both;
+    -moz-animation: stayvisible 0.5s both;
+    -o-animation: stayvisible 0.5s both;
+    -ms-animation: donothing 0.5s;
+    -ms-transition: visibility 0s linear 0.17s;
+    visibility: visible;
+}
+.card.applyflip .content2 .cardFront,
+.card .content2 .cardBack {
+    /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
+    
+    animation: stayvisible 0.5s both;
+    -webkit-animation: stayvisible 0.5s both;
+    -moz-animation: stayvisible 0.5s both;
+    -o-animation: stayvisible 0.5s both;
+    -ms-animation: donothing 0.5s;
+    -ms-transition: visibility 0s linear 0.17s;
+    visibility: hidden;
+}
+@keyframes stayvisible {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: visible;
+    }
+}
+@-webkit-keyframes stayvisible {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: visible;
+    }
+}
+@-moz-keyframes stayvisible {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: visible;
+    }
+}
+@-o-keyframes stayvisible {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: visible;
+    }
+}
+@-ms-keyframes donothing {
+    0% {} 100% {}
+}
+/*animation finish*/
 
-                /* content2 backface is visible so that static content2 still appears */
-                backface-visibility: visible;
-                -webkit-backface-visibility: visible;
-                -moz-backface-visibility: visible;
-                -o-backface-visibility: visible;
-                -ms-backface-visibility: visible;
-
-
-                
-                
-            }
-            .card.applyflip .content2 {
-                transform: rotateY(180deg);
-                -webkit-transform: rotateY(180deg);
-                -moz-transform: rotateY(180deg);
-                -o-transform: rotateY(180deg);
-                -ms-transform: rotateY(180deg);
-            }
-
-
-            .card .content2 .cardStatic {
-                /* Half way through the card flip, rotate static content2 to 0 degrees */
-                transition: 0s linear 0.17s;
-                -webkit-transition: 0s linear 0.17s;
-                -moz-transition: 0s linear 0.17s;
-                -o-transition: 0s linear 0.17s;
-                -ms-transition: 0s linear 0.17s;
-                transform: rotateY(0deg);
-                -webkit-transform: rotateY(0deg);
-                -moz-transform: rotateY(0deg);
-                -o-transform: rotateY(0deg);
-                -ms-transform: rotateY(0deg);
-
-                
-            }
-
-            .card.applyflip .content2 .cardStatic {
-                /* Half way through the card flip, rotate static content2 to -180 degrees -- to negate the flip and unmirror the static content2 */
-                transition: 0s linear 0.17s;
-                -webkit-transition: 0s linear 0.17s;
-                -moz-transition: 0s linear 0.17s;
-                -o-transition: 0s linear 0.17s;
-                -ms-transition: 0s linear 0.17s;
-                transform: rotateY(-180deg);
-                -webkit-transform: rotateY(-180deg);
-                -moz-transform: rotateY(-180deg);
-                -o-transform: rotateY(-180deg);
-                -ms-transform: rotateY(-180deg);
-            }
-
-            
-
-            .card .content2 .cardFront, .card .content2 .cardBack {
-                /* Backface visibility works great for all but IE. As such, we mark the backface visible in IE and manage visibility ourselves */
-                backface-visibility: hidden;
-                -webkit-backface-visibility: hidden;
-                -moz-backface-visibility: hidden;
-                -o-backface-visibility: hidden;
-                -ms-backface-visibility: visible;
-            
-            }
-            .card .content2 .cardFront, .card.applyflip .content2 .cardFront {
-                transform: rotateY(0deg);
-                -webkit-transform: rotateY(0deg);
-                -moz-transform: rotateY(0deg);
-                -o-transform: rotateY(0deg);
-                -ms-transform: rotateY(0deg);
-            }
-
-            .card .content2 .cardBack, .card.applyflip .content2 .cardBack {
-                transform: rotateY(-180deg);
-                -webkit-transform: rotateY(-180deg);
-                -moz-transform: rotateY(-180deg);
-                -o-transform: rotateY(-180deg);
-                -ms-transform: rotateY(-180deg);
-            }
-
-            .card .content2 .cardFront, .card.applyflip .content2 .cardBack {
-                /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
-                animation: stayvisible 0.5s both;
-                -webkit-animation: stayvisible 0.5s both;
-                -moz-animation: stayvisible 0.5s both;
-                -o-animation: stayvisible 0.5s both;
-                -ms-animation: donothing 0.5s;
-                -ms-transition: visibility 0s linear 0.17s;
-                visibility: visible;
-            }
-            .card.applyflip .content2 .cardFront, .card .content2 .cardBack {
-                /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
-                animation: stayvisible 0.5s both;
-                -webkit-animation: stayvisible 0.5s both;
-                -moz-animation: stayvisible 0.5s both;
-                -o-animation: stayvisible 0.5s both;
-                -ms-animation: donothing 0.5s;
-                -ms-transition: visibility 0s linear 0.17s;
-                visibility: hidden;
-            }
-            @keyframes stayvisible { from { visibility: visible; } to { visibility: visible; } }
-            @-webkit-keyframes stayvisible { from { visibility: visible; } to { visibility: visible; } }
-            @-moz-keyframes stayvisible { from { visibility: visible; } to { visibility: visible; } }
-            @-o-keyframes stayvisible { from { visibility: visible; } to { visibility: visible; } }
-            @-ms-keyframes donothing { 0% { } 100% { } }
-        /*animation finish*/
-        .lineSeparator{
-            margin:auto;
-            width:100%;
-            height:3px;
-            margin-top:30px;
-            background-color:#ddd;
-        }
-        .contributorsHeader{
-            margin-top: 50px;
-            text-align: center;
-        }
-        .previousEontributorsSection {
-            overflow-x: hidden;
-            overflow-y:hidden;
-        }
-        .previousEmployeeThreeList{
-            margin-top:50px;
-            height:100px;
-            text-align: center;
-            font-family: 'Nunito', sans-serif;
-            
-        }
-        .previousEmployeeInfoSection{
-            margin:auto;
-            width:100%;
-            height:100%;
-        }
-        .previousEmployeeInfo{
-            display: inline-block;
-            width:19%;
-
-        }
-        .previousEmployeeImage{
-            
-            border-radius:100%;
-            width:80px;
-            height:80px;
-            
-            /* Firefox */
-            -moz-transition: all 0.8s ease;
-            /* WebKit */
-            -webkit-transition: all 0.8s ease;
-            /* Opera */
-            -o-transition: all 0.8s ease;
-            /* Standard */
-            transition: all 0.8s ease;
-        }
-        
-        .previousEmployeeImage_Rotate {
-            
-            opacity: 1;
-            /* Firefox */
-            -moz-transform:  rotateY(360deg) ;
-            /* WebKit */
-            -webkit-transform:  rotateY(360deg) ;
-            /* Opera */
-            -o-transform:  rotateY(360deg) ;
-            /* Standard */
-            transform:  rotateY(360deg) ;
-            z-index: 1000;
-        
-        }
-        .cultureSection {
-            margin-top: 50px;
-        }
-        .cultureHeading{
-            text-align: center;
-        }
-        .cultureSectionSegments {
-            margin: auto;
-            width: 100%;
-        }
-        .cultureArticle{
-            width: 25%;
-            height: 200px;
-            color:white;
-            float: left;
-            text-align: center;
-            padding-top: 4%;
-            text-transform: lowercase;
-        }
-        .cultureArticleHeading{
-            font-weight:bolder;
-        }
-        .cultureArticleText{
-            font-weight:lighter;
-            font-family: 'Nunito', sans-serif;
-        }
-        .cultureSection2 {
-            margin-top: 5%;
-        }
-        
-        .cultureSectionSegments2 {
-            margin: auto;
-            width: 100%;
-            background: url(..//images/bannerCulture.png) no-repeat ;  
-            -webkit-background-size: cover;
-              -moz-background-size: cover;
-              -o-background-size: cover;
-              background-size: cover;
-              text-align: justify;
-        }
-        .cultureArticle2{
-             width: 25%;
-            height: 200px;
-            color:white;
-            float:left;
-            background-color: rgba(0,0,0,0.5);
-            text-align: center;
-            padding-top: 4%;
-            border-left:1px solid #ddd;
-            border-bottom:1px solid #ddd;
-            
-        }
-        /*
+.lineSeparator {
+    margin: auto;
+    width: 100%;
+    height: 3px;
+    margin-top: 30px;
+    background-color: #ddd;
+}
+.contributorsHeader {
+    margin-top: 50px;
+    text-align: center;
+}
+.previousEontributorsSection {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.previousEmployeeThreeList {
+    margin-top: 50px;
+    height: 100px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+.previousEmployeeInfoSection {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.previousEmployeeInfo {
+    display: inline-block;
+    width: 19%;
+}
+.previousEmployeeImage {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    /* Firefox */
+    
+    -moz-transition: all 0.8s ease;
+    /* WebKit */
+    
+    -webkit-transition: all 0.8s ease;
+    /* Opera */
+    
+    -o-transition: all 0.8s ease;
+    /* Standard */
+    
+    transition: all 0.8s ease;
+}
+.previousEmployeeImage_Rotate {
+    opacity: 1;
+    /* Firefox */
+    
+    -moz-transform: rotateY(360deg);
+    /* WebKit */
+    
+    -webkit-transform: rotateY(360deg);
+    /* Opera */
+    
+    -o-transform: rotateY(360deg);
+    /* Standard */
+    
+    transform: rotateY(360deg);
+    z-index: 1000;
+}
+.cultureSection {
+    margin-top: 50px;
+}
+.cultureHeading {
+    text-align: center;
+}
+.cultureSectionSegments {
+    margin: auto;
+    width: 100%;
+}
+.cultureArticle {
+    width: 25%;
+    height: 200px;
+    color: white;
+    float: left;
+    text-align: center;
+    padding-top: 4%;
+    text-transform: lowercase;
+}
+.cultureArticleHeading {
+    font-weight: bolder;
+}
+.cultureArticleText {
+    font-weight: lighter;
+    font-family: 'Nunito', sans-serif;
+}
+.cultureSection2 {
+    margin-top: 5%;
+}
+.cultureSectionSegments2 {
+    margin: auto;
+    width: 100%;
+    background: url(..//images/bannerCulture.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: justify;
+}
+.cultureArticle2 {
+    width: 25%;
+    height: 200px;
+    color: white;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 4%;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+/*
         #culture_one{
             background-color:#00c27c;
         }
@@ -534,141 +535,133 @@
         #culture_eight{
             background-color:#647c2a;
         }*/
-        .careersSection {
-            margin-top: 5%;
-        }
-        .careersWrapper{
-            margin: auto;
-            width: 80%;
-        }
-        .careersHeader{
-            text-align: center;
-        }
-        .careerNote{
-            text-align: center;
-            font-size: 10px;
-            font-family: 'Nunito', sans-serif;
-        }
-        .careerNote h2{
-            font-weight:lighter;
-        }
-         .angellist_jobs {
-            max-width: 100% !important;
-        }
-         .angellist_jobs-job {
-            text-align: left;
-            float: left;
-            width: 100%;
-            padding-bottom: 16px;
-            border-bottom: 1px solid #CCC;
-         }
-         
-         
-         .angellist_jobs-title a {
-            margin: 0;
-            padding: 0;
-            font-size: 100%;
-            vertical-align: baseline;
-            background: transparent;
-            color: #32a9db;
-            text-decoration: none;
-        }
-         
-         .angellist_jobs-tags {
-             margin-top: 12px !important;
-            line-height: 22px;
-         }
-        .oppurtunityEntity{
-            border-bottom: 1px solid red;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }
-        .jobEntity{
-            margin-top: 20px;
-        }
-        .jobTitle{
-            display: inline-block;
-            width: 49%;
-            text-align: left;
-            font-size: 20px;
-        }
-        .jobTitleLink{
-            margin: 0;
-            padding: 0;
-            font-size: 100%;
-            vertical-align: baseline;
-            background: transparent;
-            color: #32a9db;
-            text-decoration: none;
-        }
-        .jobCompensation{
-            display: inline-block;
-            width: 49%;
-            text-align: right;
-        }
-        .jobDescription{
-            margin-top:10px;
-        }
-        .jobTags{
-            margin-top:20px;
-        }
-        .tagsList{
-            list-style-type: none;
-            padding: 0;
-            margin:0;
-        }
-        .tagsList li{
-            display: inline;
-            color:brown;
-        }
-        .videoSection{
-            clear:both;
-        }
-        .videoImg{
-            background-image: url("http://fbe2c5f2ef3133aeaad1-938bde38aae6da0d08ebf26f58ae6895.r61.cf3.rackcdn.com/1300x400.jpg");
-             width: 100%;
-             padding-bottom:40%;
-             background-repeat: no-repeat;
-             
-             background-position: center;
-             background-size: cover;
-             position: relative;
-        }
-        .videoPlayButtonDiv{
-            position:absolute;
-            left:48%;
-            top:48%;
-        }
-        .videoPopUp{
-            background: black;
-            bottom: 0;
-            left: 0;
-            position: fixed;
-            right: 0;
-            text-align: center;
-            top: 0;
-           
 
-        }
-        #vidtest{
-            
-            width:100%;
-            
-            
-        }
-        .closeVideo{
-            position: absolute;
-            right:1%;
-            top:0;
-        }
-        .close {
-            font-size: 2em;
-            color:white;
-            cursor:pointer;
-            font-family: Garamond, "Apple Garamond";
-        }
-        #videoPlayButton  {
-            border: 1px solid #fff;
-            cursor: pointer;
-            border-radius: 100%;
-        }
+.careersSection {
+    margin-top: 5%;
+}
+.careersWrapper {
+    margin: auto;
+    width: 80%;
+}
+.careersHeader {
+    text-align: center;
+}
+.careerNote {
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+.careerNote h2 {
+    font-weight: lighter;
+}
+.angellist_jobs {
+    max-width: 100% !important;
+}
+.angellist_jobs-job {
+    text-align: left;
+    float: left;
+    width: 100%;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #CCC;
+}
+.angellist_jobs-title a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    color: #32a9db;
+    text-decoration: none;
+}
+.angellist_jobs-tags {
+    margin-top: 12px !important;
+    line-height: 22px;
+}
+.oppurtunityEntity {
+    border-bottom: 1px solid red;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.jobEntity {
+    margin-top: 20px;
+}
+.jobTitle {
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+    font-size: 20px;
+}
+.jobTitleLink {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    color: #32a9db;
+    text-decoration: none;
+}
+.jobCompensation {
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+}
+.jobDescription {
+    margin-top: 10px;
+}
+.jobTags {
+    margin-top: 20px;
+}
+.tagsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.tagsList li {
+    display: inline;
+    color: brown;
+}
+.videoSection {
+    clear: both;
+}
+.videoImg {
+    background-image: url("http://fbe2c5f2ef3133aeaad1-938bde38aae6da0d08ebf26f58ae6895.r61.cf3.rackcdn.com/1300x400.jpg");
+    width: 100%;
+    padding-bottom: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.videoPlayButtonDiv {
+    position: absolute;
+    left: 48%;
+    top: 48%;
+}
+.videoPopUp {
+    background: black;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+#vidtest {
+    width: 100%;
+}
+.closeVideo {
+    position: absolute;
+    right: 1%;
+    top: 0;
+}
+.close {
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    font-family: Garamond, "Apple Garamond";
+}
+#videoPlayButton {
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 100%;
+}
