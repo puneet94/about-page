@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito:300,400,700' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet/less" type="text/css" href="less/index.less" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script type="text/javascript" src="event-page.js"> </script>
+  <style type="text/css">
+
+        .mainContainer{
+          width:80%;
+          margin:auto;
+         
+        }
+        .eventsContainer{
+            width:60%;
+            display: inline-block;
+        }
+        .featuredEventsHeaderText {
+          font-weight: 100;
+        }
+        .featuredEvents{
+            width:100%;
+            border:1px solid #ddd;
+            border-bottom-width: 0px;
+        }
+        .eventAlignLeft{
+            float:left;
+            margin:5px;
+        }
+        .singleFeaturedEvent{
+            border-bottom:1px solid #ddd;
+            padding-bottom:25px;
+            padding-top:5px;
+        }
+        .eventDateSection{
+            font-size:20px;
+            text-align:center;
+        }
+        .eventImageSection{
+
+        }
+        .eventImage{
+            vertical-align: top;
+        }
+        .eventImage img{
+            width:100px;
+
+        }
+        .eventDuration{
+            font-weight:300;
+            font-size:12px;
+        }
+        .eventTextArticle{
+
+        }
+        
+        .eventDuration{
+            font-size:12px;
+        }
+        .eventTitle{
+            font-size:14px;
+        }
+        .eventDescription{
+            font-size:12px;
+        }
+        .eventType{
+            margin-top:10px;
+            font-size:12px;
+        }
+        .eventTypeText{
+            border:1px solid #484848;
+            padding:5px;
+            font-size:12px;
+            font-weight:300;
+        }
+        .addEventSection{
+            width:20%;
+            text-align: right;
+        }
+        .addEventIcon{
+            
+        }
+        .addEventIcon img{
+            width:50px;
+        }
+        .filtersSearchArticle{
+          margin:20px;
+        }
+        .filtersContainer{
+          width:30%;
+          display: inline-block;
+          vertical-align: top;
+          background-color:#ddd;
+          margin-left:5%;
+        }
+        .filtersSearchHeader {
+          
+        }
+        .filtersSearchInputDiv {
+          border: 1px solid #;
+          border: 1px solid #CCC;
+          background-color: white;
+          width: 100%;
+          height: 50px;
+          text-align: right;
+        }
+        .filtersSearchInput{
+          height: 100%;
+          border: none;
+          width: 80%;
+          vertical-align: top;
+          font-size: 25px;
+        }
+        .filtersSearchInput:focus { 
+          
+          outline:none;
+          
+        }
+        .filtersSearchSubmit {
+          height: 100%;
+          width: 18%;
+          background-color: white;
+          border: none;
+          color: #484848;
+        }
+        
+        .submitSearchIcon{
+          font-family: Garamond, "Apple Garamond";
+          color:#484848;
+          font-size:30px;
+        }
+        .filtersSearchToggleTab {
+          margin-top: 50px;
+        }
+        .applyFiltersTab{
+          color: #FFF;
+          background-color: #009ADE;
+          padding: 15px;
+          font-size: 18px;
+          text-decoration: none;
+          font-weight: 100;
+        }
+        .clearFiltersTab{
+          text-decoration: none;
+          padding: 15px;
+          text-align: center;
+          vertical-align: top;
+          color: #484848;
+          margin-left:10%;
+          font-size: 18px;
+          font-weight: normal;
+          font-weight: 100;
+        }
+        .filtersSelectionArticle {
+          margin-top: 50px;
+        }
+        .filterSelection {
+          border-bottom: 1px solid #fff;
+          padding-bottom: 10px;
+          padding-top: 10px;
+        }
+        .filterSelectionCheckBox{
+          
+          width:25px;
+          height:25px;
+          float:left;
+          clear:both;
+        }
+        .filterSelectionText{
+          display: inline-block; 
+          font-size: 20px;
+          margin-left: 10px;
+          font-weight: 100;
+        }
+        @media (max-width: 767px){
+          .eventsContainer{
+              width:90%;
+              margin:auto;
+          }
+          .featuredEvents{
+              width:100%;
+              border:1px solid #484848;
+              border-bottom-width: 0px;
+          }
+          .eventAlignLeft{
+              float:left;
+              margin:5px;
+          }
+          .singleFeaturedEvent{
+              border-bottom:1px solid #484848;
+              padding-bottom:25px;
+              padding-top:5px;
+          }
+          .eventDateSection{
+              display: none;
+          }
+          .eventImageSection{
+
+          }
+          .eventImage{
+              vertical-align: top;
+          }
+          .eventImage img{
+              width:100px;
+
+          }
+          .eventDuration{
+              font-weight:300;
+              font-size:12px;
+          }
+          .eventTextArticle{
+
+          }
+          
+          .eventDuration{
+              font-size:12px;
+          }
+          .eventTitle{
+              font-size:14px;
+          }
+          .eventDescription{
+              font-size:12px;
+          }
+          .eventType{
+              margin-top:10px;
+              font-size:12px;
+          }
+          .eventTypeText{
+              border:1px solid #484848;
+              padding:5px;
+              font-size:12px;
+              font-weight:300;
+          }
+          .addEventSection{
+              width:20%;
+              text-align: right;
+          }
+          .addEventIcon{
+              
+          }
+          .addEventIcon img{
+              width:50px;
+          }
+        }
+  </style>
+</head>
+    <body>
+    	<div class="event-page" >
+        <section class="mainContainer">
+          <section class="eventsContainer">
+            <section class="eventsPlaceHeader">
+              <h1 class="eventsPlaceHeaderText">
+                Dubai events
+              </h1>  
+            </section>
+            <section class="eventsPaginationSection">
+              <div class="eventsNavigationTabs">
+                <div class="navigationTabToggleFirst"></div>
+                <div class="navigationTabToggleSecond"></div>
+              </div>
+              <div class="eventsDisplayTypeToggle">
+                <div class="listTypeToggle">
+                  <span class="listIcon">
+                    <i class="fa fa-list"></i>
+                  </span>
+                </div>  
+                <div class="mapTypeToggle">
+                  <span class="mapIcon">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                </div>
+              </div>
+            </section>
+            <header class="featuredEventsHeader">
+                <h2 class="featuredEventsHeaderText">
+                  Featured Events
+                </h2>
+              </header>
+            <section class="featuredEvents">
+              
+              <article class="singleFeaturedEvent">
+                <section class="eventDateSection eventAlignLeft">
+                  <div class="eventDay">28</div>
+                  <div class="eventMonth"> Oct</div>
+                </section>
+                <section class="eventImageSection  eventAlignLeft">
+                  <div class="eventImage">
+                    <img src="images/eventImage.jpg">
+                  </div>
+                </section>
+                <article class="eventTextArticle  eventAlignLeft">
+                  <div class="eventDuration">28 October 2015 to 29 October 2015</div>
+                  <div class="eventTitle">5th Smart Grids &amp; Smart Meters Summit</div>
+                  <div class="eventDescription">A dedicated smart grid and meters solutions event.</div>
+                  <div class="eventType">
+                    <span class="eventTypeText">Business</span> 
+                  </div>
+                </article>
+                <section class="addEventSection eventAlignLeft">
+                  <div class="addEventIcon">
+                    <img src="images/addEventImage.png">
+                  </div>
+                </section>
+                <div class="clearFloat" style="clear:both"></div>
+              </article>
+              <article class="singleFeaturedEvent">
+                <section class="eventDateSection eventAlignLeft">
+                  <div class="eventDay">28</div>
+                  <div class="eventMonth"> Oct</div>
+                </section>
+                <section class="eventImageSection  eventAlignLeft">
+                  <div class="eventImage">
+                    <img src="images/eventImage.jpg">
+                  </div>
+                </section>
+                <article class="eventTextArticle  eventAlignLeft">
+                  <div class="eventDuration">28 October 2015 to 29 October 2015</div>
+                  <div class="eventTitle">5th Smart Grids &amp; Smart Meters Summit</div>
+                  <div class="eventDescription">A dedicated smart grid and meters solutions event.</div>
+                  <div class="eventType">
+                    <span class="eventTypeText">Business</span> 
+                  </div>
+                </article>
+                <section class="addEventSection eventAlignLeft">
+                  <div class="addEventIcon">
+                    <img src="images/addEventImage.png">
+                  </div>
+                </section>
+                <div class="clearFloat" style="clear:both"></div>
+              </article>
+              <article class="singleFeaturedEvent">
+                <section class="eventDateSection eventAlignLeft">
+                  <div class="eventDay">28</div>
+                  <div class="eventMonth"> Oct</div>
+                </section>
+                <section class="eventImageSection  eventAlignLeft">
+                  <div class="eventImage">
+                    <img src="images/eventImage.jpg">
+                  </div>
+                </section>
+                <article class="eventTextArticle  eventAlignLeft">
+                  <div class="eventDuration">28 October 2015 to 29 October 2015</div>
+                  <div class="eventTitle">5th Smart Grids &amp; Smart Meters Summit</div>
+                  <div class="eventDescription">A dedicated smart grid and meters solutions event.</div>
+                  <div class="eventType">
+                   <span class="eventTypeText">Business</span> 
+                  </div>
+                </article>
+                <section class="addEventSection eventAlignLeft">
+                  <div class="addEventIcon">
+                    <img src="images/addEventImage.png">
+                  </div>
+                </section>
+                <div class="clearFloat" style="clear:both"></div>
+              </article>
+              <article class="singleFeaturedEvent">
+                <section class="eventDateSection eventAlignLeft">
+                  <div class="eventDay">28</div>
+                  <div class="eventMonth"> Oct</div>
+                </section>
+                <section class="eventImageSection  eventAlignLeft">
+                  <div class="eventImage">
+                    <img src="images/eventImage.jpg">
+                  </div>
+                </section>
+                <article class="eventTextArticle  eventAlignLeft">
+                  <div class="eventDuration">28 October 2015 to 29 October 2015</div>
+                  <div class="eventTitle">5th Smart Grids &amp; Smart Meters Summit</div>
+                  <div class="eventDescription">A dedicated smart grid and meters solutions event.</div>
+                  <div class="eventType">
+                    <span class="eventTypeText">Business</span> 
+                  </div>
+                </article>
+                <section class="addEventSection eventAlignLeft">
+                  <div class="addEventIcon">
+                    <img src="images/addEventImage.png">
+                  </div>
+                </section>
+                <div class="clearFloat" style="clear:both"></div>
+              </article>
+              <article class="singleFeaturedEvent">
+                <section class="eventDateSection eventAlignLeft">
+                  <div class="eventDay">28</div>
+                  <div class="eventMonth"> Oct</div>
+                </section>
+                <section class="eventImageSection  eventAlignLeft">
+                  <div class="eventImage">
+                    <img src="images/eventImage.jpg">
+                  </div>
+                </section>
+                <article class="eventTextArticle  eventAlignLeft">
+                  <div class="eventDuration">28 October 2015 to 29 October 2015</div>
+                  <div class="eventTitle">5th Smart Grids &amp; Smart Meters Summit</div>
+                  <div class="eventDescription">A dedicated smart grid and meters solutions event.</div>
+                  <div class="eventType">
+                    <span class="eventTypeText">Business</span> 
+                  </div>
+                </article>
+                <section class="addEventSection eventAlignLeft">
+                  <div class="addEventIcon">
+                    <img src="images/addEventImage.png">
+                  </div>
+                </section>
+                <div class="clearFloat" style="clear:both"></div>
+              </article>
+            </section>
+          </section>
+          <section class="filtersContainer">
+            <article class="filtersSearchArticle">
+              <header class="filtersSearchHeader">
+                <h3 class="filtersSearchHeadertext">
+                  Search events
+                </h3>
+                <section class="filtersSearchInputSection">
+                  <div class="filtersSearchInputDiv">
+                    <input type="text" class="filtersSearchInput"></input>
+                    <button class="filtersSearchSubmit">
+                      <span class="submitSearchIcon">
+                        &#128269;
+                      </span>
+                    </button>
+                  </div>
+                </section>
+              </header>
+              <div class="lineSeperator">
+                
+              </div>
+              <main class="filtersSearchMain">
+                <header class="filtersMainHeader">
+                  <h2 class="narrowResultsText">
+                    Narrow Your Results
+                  </h2>
+                  <section class="filtersSearchToggleTab">
+                    <a href="javascript:void(0)" class="applyFiltersTab">
+                      <span>
+                        Apply Filters
+                      </span>
+                    </a>
+                    <a href="javascript:void(0)" class="clearFiltersTab">
+                      <span>
+                        Clear
+                      </span>
+                    </a>
+                  </section>
+                </header>
+              </main>
+              <article class="filtersSelectionArticle">
+                <main class="filtersSelectionList">
+                  <div class="filterSelection">
+                    <input type="checkbox" class="filterSelectionCheckBox" name="filter1">
+                    <span class="filterSelectionText">
+                      All
+                    </span>
+                  </div>
+                  <div class="filterSelection">
+                    <input type="checkbox" class="filterSelectionCheckBox" name="filter1">
+                    <span class="filterSelectionText">
+                      All
+                    </span>
+                  </div>
+                  <div class="filterSelection">
+                    <input type="checkbox" class="filterSelectionCheckBox" name="filter1">
+                    <span class="filterSelectionText">
+                      All
+                    </span>
+                  </div>
+                  <div class="filterSelection">
+                    <input type="checkbox" class="filterSelectionCheckBox" name="filter1">
+                    <span class="filterSelectionText">
+                      All
+                    </span>
+                  </div>
+                </main>
+              </article>
+            </article>
+          </section>
+        </section>
+        
+	    </div>
+    </body>
+</html>
